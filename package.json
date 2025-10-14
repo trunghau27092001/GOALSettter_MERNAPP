@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node back-end/server.js",
-    "server": "nodemon back-end/server.js"
+    "server": "nodemon back-end/server.js",
+    "client": "npm start --prefix front-end",
+    "devc": "npm run server & wait-on tcp:3000 && npm run client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "Nodejs",
@@ -23,6 +26,7 @@
     "mongoose": "^8.18.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.10"
   }
 }
