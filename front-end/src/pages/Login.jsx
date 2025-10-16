@@ -64,20 +64,20 @@ function Login() {
       </section>
       <section className="content">
         <section className="form">
-        <form onSubmit={onSubmit}>
-            
-            <div className="form-group"> 
-              <input type="email" className="form-control" id="email" name = 'email' value = {email} onChange={onChange} placeholder="Email" required />
-            </div>
-            <div className="form-group">
-              <input type="password" className="form-control" id="password" name = 'password' value = {password} onChange={onChange} placeholder="Mật khẩu" required />
-            </div>
+          <form onSubmit={onSubmit}>
+              
+              <div className="form-group"> 
+                <input type="email" className="form-control" id="email" name = 'email' value = {email} onChange={onChange} placeholder="Email" required />
+              </div>
+              <div className="form-group">
+                <input type="password" className="form-control" id="password" name = 'password' value = {password} onChange={onChange} placeholder="Mật khẩu" required />
+              </div>
 
-            <div className="form-group">
-              <button type ='submit' className="btn btn-block">Xác nhận</button>
-            </div>
-        </form>
-      </section>
+              <div className="form-group">
+                <button type ='submit' className="btn btn-block">Xác nhận</button>
+              </div>
+          </form>
+        </section>
       </section>
     </>
   )

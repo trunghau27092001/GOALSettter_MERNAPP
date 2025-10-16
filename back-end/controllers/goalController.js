@@ -34,7 +34,6 @@ const postGoal = asyncHandler(async (req,res) => {
 //@route PUT: api/goals/:id
 
 const putGoal = asyncHandler(async (req,res) => {
-    console.log(req.body)
     const goal  = await Goal.findById(req.body.id)
     if(!goal)
     {
